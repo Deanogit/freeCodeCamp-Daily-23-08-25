@@ -4,3 +4,17 @@
 // A prime number is a positive integer greater than 1 that is only divisible by 1 and itself.
 // A negative prime number is the negative version of a positive prime number.
 // 1 and 0 are not considered prime numbers.
+
+// “Is there any number other than 1 and itself that divides this number evenly?”
+
+function isUnnaturalPrime(n) {
+  //console.log(n)
+  if (n === 0 || n === 1 || n === -1) {
+    return false;
+  } else {
+    if (n / n == 1) {
+      console.log(n);
+    }
+  }
+  return n;
+}
