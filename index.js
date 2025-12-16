@@ -12,8 +12,10 @@ function isUnnaturalPrime(n) {
   if (n === 0 || n === 1 || n === -1) {
     return false;
   } else {
-    if (n / n == 1) {
-      console.log(n);
+    // get the square root
+    let sqr = Math.sqrt(n);
+    for (let i = 2; i <= sqr; i++) {
+      console.log(i);
     }
   }
   return n;
