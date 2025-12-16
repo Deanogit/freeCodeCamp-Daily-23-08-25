@@ -29,3 +29,18 @@ function isUnnaturalPrime(n) {
 }
 
 isUnnaturalPrime(-23);
+
+function isUnnaturalPrime(n) {
+  const abs = Math.abs(n);
+
+  if (abs === 0 || abs === 1) return false;
+
+  const limit = Math.sqrt(abs);
+  for (let i = 2; i <= limit; i++) {
+    if (abs % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
