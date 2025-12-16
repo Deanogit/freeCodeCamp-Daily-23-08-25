@@ -7,16 +7,25 @@
 
 // “Is there any number other than 1 and itself that divides this number evenly?”
 
+// “Is there any number other than 1 and itself that divides this number evenly?”
+
 function isUnnaturalPrime(n) {
   //console.log(n)
-  if (n === 0 || n === 1 || n === -1) {
+  let abs = Math.abs(n);
+  if (abs === 0 || abs === 1) {
     return false;
   } else {
     // get the square root
-    let sqr = Math.sqrt(n);
+    let sqr = Math.sqrt(abs);
     for (let i = 2; i <= sqr; i++) {
       console.log(i);
+      if (n % i === 0) {
+        return false;
+      }
     }
+    return true;
   }
-  return n;
+  //return n;
 }
+
+isUnnaturalPrime(-23);
