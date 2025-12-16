@@ -19,7 +19,7 @@ function isUnnaturalPrime(n) {
     let sqr = Math.sqrt(abs);
     for (let i = 2; i <= sqr; i++) {
       console.log(i);
-      if (n % i === 0) {
+      if (abs % i === 0) {
         return false;
       }
     }
